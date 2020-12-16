@@ -5,3 +5,7 @@
 ```python 
 torch.all(torch.eq(a, b))
 ```
+或者
+```python
+torch.equal(a, a)
+```
