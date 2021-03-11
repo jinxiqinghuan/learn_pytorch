@@ -9,3 +9,9 @@ torch.all(torch.eq(a, b))
 ```python
 torch.equal(a, a)
 ```
+
+
+#### Linux系统GPU闲置内存批量清理命令
+```
+sudo fuser -v /dev/nvidia* |awk '{for(i=1;i<=NF;i++)print "kill -9 " $i;}' | sudo sh
+```
